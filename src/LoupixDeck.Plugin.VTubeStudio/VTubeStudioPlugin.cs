@@ -20,7 +20,7 @@ public sealed class VTubeStudioPlugin : LoupixPlugin, IPluginSettingsPage
     {
         Id = "vtubestudio",
         Name = "VTube Studio",
-        Version = new Version(1, 0, 0),
+        Version = new Version(1, 1, 0),
         SdkVersion = new Version(1, 28, 0),
         Author = "vividflash",
         Description = "Controls VTube Studio through its plugin API.",

@@ -44,19 +44,19 @@ Hotkey buttons show on and off when the hotkey toggles an expression. For items,
 
 ## Icons
 
-A button gets its icon from keywords in the expression or hotkey name. Spaces, underscores and case do not matter, and the more specific keyword wins. The optional last parameter picks an icon by name, or `none` for text only: `VTubeStudio.ToggleExpression(EXP_angry,heart)`.
+A button gets its icon from keywords in the expression or hotkey name. Spaces, underscores and case do not matter, and the more specific keyword wins. Short keywords such as `eat`, `mad`, `pen` or `star` only match as a whole word (`EXP_eat`, not `great`); they are marked with * below. The optional last parameter picks an icon by name, or `none` for text only: `VTubeStudio.ToggleExpression(EXP_angry,heart)`.
 
 ![Icons](tools/emote-icons-sheet.png)
 
 | Icon | Keywords |
 |---|---|
-| `cash` | cash, money, dollar |
-| `heart` | heart, love |
-| `angry` | angry, mad |
+| `cash` | cash, money, dollar, rich*, pay* |
+| `heart` | heart, love* |
+| `angry` | angry, mad*, rage*, anger* |
 | `angryshy` | angryshy |
 | `shy` | shy, blush |
-| `star` | star, sparkle |
-| `tears` | tears, cry |
+| `star` | star*, stars, sparkle |
+| `tears` | tears, cry*, sad*, sob* |
 | `pleading` | pleading |
 | `sulking` | sulking |
 | `swirly` | swirly, dizzy |
@@ -68,24 +68,94 @@ A button gets its icon from keywords in the expression or hotkey name. Spaces, u
 | `sweatdrops` | realisticsweat |
 | `nosebubble` | nosebubble |
 | `sleepbubble` | sleepbubble |
-| `sleep` | sleep, zzz |
+| `sleep` | sleep, zzz, nap*, tired* |
 | `loading` | loading |
-| `speech` | speech, talk |
-| `eating` | eating, eat, food |
-| `fish` | fish |
+| `speech` | speech, talk*, say* |
+| `eating` | eating, eat*, food, nom*, snack* |
+| `fish` | fish* |
 | `white3` | white3 |
-| `controller` | console, controller, gamepad, gaming |
-| `microphone` | microphone, mic |
-| `pen` | pen, stylus, pencil |
+| `controller` | console, controller, gamepad, gaming, game* |
+| `microphone` | microphone, mic* |
+| `pen` | pen*, stylus, pencil, draw* |
 | `outfit` | basicwhite, outfit, clothes |
+| `outfitred` | redoutfit, outfitred, redskirt |
+| `outfitblack` | blackoutfit, outfitblack, blackskirt |
 | `heels` | sexy, heels |
 | `school` | school, seifuku, uniform |
 | `foxears` | kitsune, kittsune, fox, wolf |
 | `bunnyears` | bunny, rabbit |
 | `deviltail` | sdemon, succubus, tail |
-| `horns` | demon, devil, horn |
-| `undies` | naked, underwear, undies |
-| `bikini` | bikini, swimsuit, swim |
+| `horns` | demon*, devil, horn*, horns, oni* |
+| `undies` | naked, underwear, undies, nude*, bra* |
+| `bikini` | bikini, swim |
+| `bikiniwhite` | whitebikini, bikiniwhite |
+| `bikiniblack` | blackbikini, bikiniblack |
+| `swimsuit` | swimsuit, onepiece |
+| `swimsuitwhite` | whiteswimsuit, swimsuitwhite |
+| `swimsuitblack` | blackswimsuit, swimsuitblack |
+| `tshirt` | tshirt, boymode |
+| `hoodie` | hoodie |
+| `suit` | tuxedo, suit* |
+| `trunks` | trunks |
+| `halo` | halo |
+| `hat` | witchhat, xmashat, santahat, hat* |
+| `coffee` | coffee |
+| `boba` | boba, bubbletea |
+| `sunglasses` | sunglasses |
+| `baseballcap` | baseballcap, cap* |
+| `blanket` | blanket |
+| `dragontail` | dragontail |
+| `foxtail` | foxtail |
+| `horsetail` | horsetail |
+| `liontail` | liontail |
+| `longhairtail` | longhairtail |
+| `mermaidtail` | mermaidtail, mermaid |
+| `ninetail` | ninetail, ninetails |
+| `raccoontail` | raccoontail |
+| `squirreltail` | squirreltail |
+| `thicktail` | thicktail |
+| `sharktail` | sharktail, whaleshark |
+| `cattail` | cattail |
+| `nightcap` | nightcap |
+| `fairywings` | fairywing |
+| `featherwings` | featherwing |
+| `impwings` | impwing |
+| `littlewings` | littlewing |
+| `membranedwings` | membranedwing |
+| `petitwings` | petitwing |
+| `can` | soda, cola, energydrink, can*, beverage |
+| `water` | water* |
+| `wine` | wine* |
+| `juice` | juice |
+| `cocoa` | cocoa, hotchocolate |
+| `bread` | bread |
+| `egg` | egg* |
+| `pudding` | pudding |
+| `candycane` | candycane |
+| `bed` | bed* |
+| `couch` | couch, sofa |
+| `gamerchair` | gamerchair, gamingchair |
+| `table` | table* |
+| `tablet` | tablet |
+| `hammer` | hammer, mallet |
+| `keys` | keys*, key* |
+| `xmaslights` | xmaslights, lights* |
+| `headpat` | headpat, pat* |
+| `steam` | steam* |
+| `swimring` | swimmingtube, innertube, swimring |
+| `heartglasses` | heartglasses |
+| `catears` | catear |
+| `moustache` | moustache, mustache |
+| `eyepatch` | eyepatch |
+| `headband` | headband |
+| `helmet` | helmet |
+| `clown` | clown |
+| `pacifier` | pacifier |
+| `bandaid` | bandaid |
+| `crown` | crown |
+| `earring` | earring |
+| `bow` | ribbon, bow* |
+| `miku` | miku |
 
 `connected`, `disconnected` and `locked` belong to the connection button and have no keywords.
 
