@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>default</LangVersion>
+    <DebugType>embedded</DebugType>
+
+    <!-- Produces a .deps.json and copies dependencies next to the plugin dll so
+         the host's AssemblyDependencyResolver can find them. -->
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <Version>1.0.0</Version>
+    <Authors>vividflash</Authors>
+    <Description>VTube Studio controls for LoupixDeck.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- The host supplies the SDK assembly at runtime; never ship it. -->
+    <PackageReference Include="LoupixDeck.PluginSdk" Version="1.28.0">
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="LoupixDeck.Plugin.VTubeStudio.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="plugin.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="strings.*.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\icon.png" Link="icon.png" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="icon128.png" LogicalName="icon128.png" />
+    <EmbeddedResource Include="Icons\*.png" LogicalName="Icons/%(Filename)%(Extension)" />
+  </ItemGroup>
+
+</Project>

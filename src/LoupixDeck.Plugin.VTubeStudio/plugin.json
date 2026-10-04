@@ -1,0 +1,11 @@
+{
+  "id": "vtubestudio",
+  "name": "VTube Studio",
+  "version": "1.0.0",
+  "sdkVersion": "1.28.0",
+  "entryAssembly": "LoupixDeck.Plugin.VTubeStudio.dll",
+  "platform": "All",
+  "iconFile": "icon.png",
+  "author": "vividflash",
+  "description": "Controls VTube Studio through its plugin API."
+}
