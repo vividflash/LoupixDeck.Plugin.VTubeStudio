@@ -2,7 +2,4 @@
   <Folder Name="/src/">
     <Project Path="src/LoupixDeck.Plugin.VTubeStudio/LoupixDeck.Plugin.VTubeStudio.csproj" />
   </Folder>
-  <Folder Name="/tests/">
-    <Project Path="tests/LoupixDeck.Plugin.VTubeStudio.Tests/LoupixDeck.Plugin.VTubeStudio.Tests.csproj" />
-  </Folder>
 </Solution>
